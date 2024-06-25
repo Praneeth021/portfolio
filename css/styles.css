@@ -1,0 +1,272 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.nav-link {
+    color: #333 !important;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #84fab0 !important;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    background: url('https://www.transparenttextures.com/patterns/diagmonds-light.png'), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s;
+    flex: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 5px solid #fff;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #333;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    align-items: center;
+    margin: 2px;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 5rem 1rem;
+    text-align: center;
+    animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: #fff;
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer a {
+    color: #84fab0;
+}
+
+.footer a:hover {
+    color: #8fd3f4;
+}
+
+
+/* Experience Section */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    background-color: #84fab0;
+    top: 0;
+    bottom: 0;
+  
+}
+
+.timeline-item {
+    padding: 20px 30px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 15px; /* Adjusted width */
+    height: 15px; /* Adjusted height */
+    right: -7px; /* Adjusted position */
+    background-color: white;
+    border: 3px solid #84fab0;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+
+.timeline-item-content {
+    padding: 20px;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Projects Section */
+
+
+.project-card {
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.project-card .card-text {
+    color: #777;
+}
+
+.project-card .btn {
+    background-color: #84fab0;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.project-card .btn:hover {
+    background-color: #8fd3f4;
+}
+
+
+
+/* Skills section */
+
+.skills-card {
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px);
+}
+
+.skills-card h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.skills-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-card ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.skills-card ul li i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: #8fd3f4;
+}
